@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan - Pengaturan</title>
+    <link rel="stylesheet" href="setting.css">
+</head>
+
+<body>
+
+    <div class="dashboard" id="dashboard">
+
+        <div class="sidebar" id="sidebar">
+
+            <div class="logo" id="logo-library">
+                <img src="assets/buku.png" alt="">
+                <span>RPL 4 LIBRARY</span>
+            </div>
+
+            <div class="menu" id="menu-sidebar">
+
+                <a href="dashboard.html" id="menu-beranda">
+                    <img src="assets/home.png" alt="">
+                    <span>Beranda</span>
+                </a>
+
+                <a href="buku.html" id="menu-buku">
+                    <img src="assets/book.png" alt="">
+                    <span>Buku</span>
+                </a>
+
+                <a href="waktu.html" id="menu-peminjaman">
+                    <img src="assets/bawa buku.png" alt="">
+                    <span>Atur Waktu</span>
+                </a>
+
+                <a href="riwayat.html" id="menu-riwayat">
+                    <img src="assets/history.png" alt="">
+                    <span>Riwayat</span>
+                </a>
+
+                <a href="notif.html" id="menu-notifikasi">
+                    <img src="assets/notif.png" alt="">
+                    <span>Notifikasi</span>
+                </a>
+
+                <a href="profile.html" id="menu-profile">
+                    <img src="assets/pp.png" alt="">
+                    <span>Profile</span>
+                </a>
+
+                <a href="setting.html" class="menu-aktif" id="menu-pengaturan">
+                    <img src="assets/seting.png" alt="">
+                    <span>Pengaturan</span>
+                </a>
+
+            </div>
+
+            <a href="" class="logout" id="btn-logout">
+                <span>↪</span>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+        <div class="content" id="content-setting">
+
+            <div class="navbar" id="navbar-setting">
+
+                <div class="navbar-title" id="navbar-title">
+                    <h1>Pengaturan</h1>
+                    <p>Kelola pengaturan akun dan preferensi perpustakaan kamu.</p>
+                </div>
+
+                <div class="profil" id="profil-navbar">
+
+                    <span class="notifikasi" id="btn-notifikasi">
+                        <img src="assets/notif.png" alt="">
+                    </span>
+
+                    <img src="assets/profil.png" alt="Foto Profil" id="foto-profil">
+
+                    <b id="nama-pengguna">M.Rafli</b>
+
+                </div>
+
+            </div>
+
+            <div class="setting-section" id="setting-akun">
+
+                <h2>Akun</h2>
+
+                <div class="setting-card" id="setting-profil">
+
+                    <div class="setting-icon blue" id="icon-profil">
+                        <img src="assets/pp.png" alt="">
+                    </div>
+
+                    <div class="setting-info">
+
+                        <h3>Informasi Profil</h3>
+
+                        <p>
+                            Kelola nama, nomor telepon, email dan foto profil kamu.
+                        </p>
+
+                    </div>
+
+                    <a href="profile.html" class="setting-button" id="btn-kelola-profil">
+                        Kelola
+                    </a>
+
+                </div>
+
+                <div class="setting-card" id="setting-keamanan">
+
+                    <div class="setting-icon green" id="icon-keamanan">
+                        <span>🔒</span>
+                    </div>
+
+                    <div class="setting-info">
+
+                        <h3>Keamanan Akun</h3>
+
+                        <p>
+                            Kelola password dan keamanan akun perpustakaan kamu.
+                        </p>
+
+                    </div>
+
+                    <a href="#" class="setting-button" id="btn-kelola-keamanan">
+                        Kelola
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="setting-section" id="setting-preferensi">
+
+                <h2>Preferensi</h2>
+
+                <div class="setting-card" id="setting-notifikasi">
+
+                    <div class="setting-icon orange" id="icon-notifikasi">
+                        <img src="assets/notif.png" alt="">
+                    </div>
+
+                    <div class="setting-info">
+
+                        <h3>Notifikasi</h3>
+
+                        <p>
+                            Atur pemberitahuan mengenai peminjaman dan pengembalian buku.
+                        </p>
+
+                    </div>
+
+                    <a href="notif.html" class="setting-button" id="btn-kelola-notifikasi">
+                        Kelola
+                    </a>
+
+                </div>
+
+                <div class="setting-card" id="setting-tampilan">
+
+                    <div class="setting-icon purple" id="icon-tampilan">
+                        <span>◐</span>
+                    </div>
+
+                    <div class="setting-info">
+
+                        <h3>Tampilan</h3>
+
+                        <p>
+                            Atur tampilan dan preferensi antarmuka perpustakaan.
+                        </p>
+
+                    </div>
+
+                    <div class="theme-choice" id="theme-choice">
+
+                        <label id="tema-terang">
+                            <input type="radio" name="tema" checked id="radio-terang">
+                            <span>Terang</span>
+                        </label>
+
+                        <label id="tema-gelap">
+                            <input type="radio" name="tema" id="radio-gelap">
+                            <span>Gelap</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="setting-section" id="setting-tentang">
+
+                <h2>Tentang</h2>
+
+                <div class="setting-card about-card" id="about-library">
+
+                    <div class="setting-icon blue" id="icon-library">
+                        <img src="assets/buku.png" alt="">
+                    </div>
+
+                    <div class="setting-info">
+
+                        <h3>RPL 4 Library</h3>
+
+                        <p>
+                            Sistem perpustakaan digital untuk membantu siswa
+                            mencari dan mengelola buku dengan mudah.
+                        </p>
+
+                    </div>
+
+                    <span class="version" id="version-library">
+                        v1.0
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

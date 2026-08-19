@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+
+/* =====================
+   DASHBOARD
+===================== */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* =====================
+   SIDEBAR
+===================== */
+
+.sidebar {
+    width: 205px;
+    min-height: 100vh;
+
+    border-right: 1px solid #999;
+
+    padding: 35px 15px;
+
+    position: relative;
+
+    flex-shrink: 0;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 35px;
+}
+
+.logo img {
+    width: 45px;
+    height: 35px;
+
+    object-fit: contain;
+}
+
+.logo span {
+    color: #168CF5;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    height: 42px;
+
+    padding: 0 12px;
+
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    font-size: 16px;
+}
+
+.menu a img {
+    width: 24px;
+    height: 24px;
+
+    object-fit: contain;
+}
+
+
+/* LOGOUT */
+
+.logout {
+    position: absolute;
+
+    bottom: 60px;
+    left: 27px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    color: black;
+
+    text-decoration: none;
+}
+
+
+/* =====================
+   DETAIL CONTENT
+===================== */
+
+.detail-content {
+    flex: 1;
+
+    padding: 45px 55px;
+
+    min-width: 0;
+}
+
+
+/* =====================
+   KEMBALI
+===================== */
+
+.kembali {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    text-decoration: none;
+
+    color: black;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 25px;
+
+    margin-bottom: 40px;
+}
+
+
+/* TEMPAT LOGO BACK */
+
+.kembali img {
+    width: 50px;
+    height: 35px;
+
+    object-fit: contain;
+}
+
+
+/* =====================
+   DETAIL UTAMA
+===================== */
+
+.detail-utama {
+    display: flex;
+
+    align-items: flex-start;
+
+    position: relative;
+
+    margin-left: 65px;
+}
+
+
+/* =====================
+   COVER BUKU
+===================== */
+
+.cover-buku {
+    width: 230px;
+    height: 325px;
+
+    flex-shrink: 0;
+}
+
+.cover-buku img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    display: block;
+}
+
+
+/* =====================
+   INFO BUKU
+===================== */
+
+.info-buku {
+    margin-left: 75px;
+
+    padding-top: 35px;
+}
+
+
+.info-buku h1 {
+    margin: 0 0 5px 0;
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+
+.penulis {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+
+/* =====================
+   RATING
+===================== */
+
+.rating {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 18px;
+
+    font-size: 13px;
+}
+
+.bintang {
+    color: #FF9D00;
+
+    font-size: 18px;
+}
+
+.ulasan {
+    color: #555;
+}
+
+
+/* =====================
+   DATA BUKU
+===================== */
+
+.data-buku {
+    margin-top: 38px;
+}
+
+.data-row {
+    display: grid;
+
+    grid-template-columns: 95px 1fr;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+}
+
+.data-row .label {
+    font-weight: bold;
+}
+
+
+/* =====================
+   LABEL RPL
+===================== */
+
+.label-rpl {
+    position: absolute;
+
+    right: 35px;
+
+    top: 120px;
+
+    width: 125px;
+    height: 58px;
+
+    border: 1px solid #777;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+/* =====================
+   DESKRIPSI
+===================== */
+
+.deskripsi {
+    margin-top: 25px;
+
+    margin-left: 65px;
+
+    max-width: 850px;
+}
+
+.deskripsi h3 {
+    font-size: 15px;
+
+    margin: 0 0 12px 0;
+}
+
+.deskripsi p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 20px;
+}
+
+
+/* =====================
+   TOMBOL
+===================== */
+
+.tombol-detail {
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    margin-top: 30px;
+
+    margin-left: 105px;
+}
+
+
+/* ATUR WAKTU */
+
+.atur-waktu {
+    width: 175px;
+    height: 55px;
+
+    background-color: white;
+
+    border: 1px solid #777;
+
+    border-radius: 15px;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* BACA BUKU */
+
+.baca-buku {
+    width: 250px;
+    height: 55px;
+
+    background-color: #168CF5;
+
+    color: black;
+
+    border: none;
+
+    border-radius: 15px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* FAVORIT */
+
+.favorit {
+    width: 105px;
+    height: 45px;
+
+    background-color: white;
+
+    border: 1px solid #777;
+
+    border-radius: 15px;
+
+    font-size: 32px;
+
+    line-height: 1;
+
+    cursor: pointer;
+}

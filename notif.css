@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 205px;
+    min-height: 100vh;
+    border-right: 1px solid #999;
+    padding: 35px 15px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.logo img {
+    width: 45px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.logo span {
+    color: #168CF5;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 42px;
+    padding: 0 12px;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.menu a img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.menu .menu-aktif {
+    background-color: #E1F1FF;
+    border: 1px solid #168CF5;
+}
+
+.logout {
+    position: absolute;
+    bottom: 60px;
+    left: 27px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    width: 100%;
+    padding: 30px 45px;
+    min-width: 0;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.navbar-title h1 {
+    font-size: 30px;
+    margin: 0 0 8px 0;
+}
+
+.navbar-title p {
+    font-size: 15px;
+    color: #888;
+    margin: 0;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.profil > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profil b {
+    font-size: 15px;
+}
+
+.notifikasi {
+    display: flex;
+    align-items: center;
+}
+
+.notifikasi img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   HEADER NOTIFIKASI
+========================= */
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 22px;
+}
+
+.notification-header h2 {
+    font-size: 22px;
+    margin: 0 0 8px 0;
+}
+
+.notification-header p {
+    margin: 0;
+    color: #999;
+    font-size: 14px;
+}
+
+.read-all {
+    height: 43px;
+    padding: 0 20px;
+    border: 1px solid #CDE5FA;
+    border-radius: 8px;
+    background-color: white;
+    color: #168CF5;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.read-all:hover {
+    background-color: #EAF6FF;
+}
+
+
+/* =========================
+   HARI
+========================= */
+
+.notification-day {
+    font-size: 16px;
+    margin: 28px 0 15px 0;
+}
+
+.notification-day.kemarin {
+    margin-top: 30px;
+}
+
+
+/* =========================
+   NOTIFICATION LIST
+========================= */
+
+.notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.notification-card {
+    min-height: 105px;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 17px 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background-color: white;
+}
+
+.notification-card.unread {
+    background-color: #F3FAFF;
+    border-color: #CDE9FF;
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.notification-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-icon img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.notification-icon span {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.notification-icon.blue {
+    background-color: #E2F3FF;
+}
+
+.notification-icon.orange {
+    background-color: #FFF0D9;
+}
+
+.notification-icon.green {
+    background-color: #E5F8EE;
+    color: #16A05D;
+}
+
+.notification-icon.purple {
+    background-color: #EFE8FF;
+    color: #8055E8;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.notification-title b {
+    font-size: 15px;
+}
+
+.notification-content p {
+    margin: 7px 0 12px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.notification-content p strong {
+    color: #555;
+}
+
+.time {
+    color: #A0A0A0;
+    font-size: 12px;
+}
+
+
+/* =========================
+   UNREAD DOT
+========================= */
+
+.dot {
+    width: 7px;
+    height: 7px;
+    background-color: #168CF5;
+    border-radius: 50%;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .content {
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        width: 180px;
+    }
+
+    .menu a {
+        font-size: 14px;
+        gap: 15px;
+    }
+
+    .content {
+        padding: 25px;
+    }
+
+    .navbar-title h1 {
+        font-size: 26px;
+    }
+
+    .profil {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .sidebar {
+        width: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo span,
+    .menu a span,
+    .logout span:last-child {
+        display: none;
+    }
+
+    .menu a {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .logout {
+        left: 25px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .notification-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .notification-card {
+        padding: 15px;
+    }
+}

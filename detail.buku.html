@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan - Detail Buku</title>
+    <link rel="stylesheet" href="detail-buku.css">
+</head>
+
+<body>
+
+    <div class="dashboard" id="dashboard">
+
+        <div class="sidebar" id="sidebar">
+
+            <div class="logo" id="logo-library">
+                <img src="assets/buku.png" alt="">
+                <span>RPL 4 LIBRARY</span>
+            </div>
+
+            <div class="menu" id="menu-sidebar">
+
+                <a href="dashboard.html" id="menu-beranda">
+                    <img src="assets/home.png" alt="">
+                    <span>Beranda</span>
+                </a>
+
+                <a href="buku.html" id="menu-buku">
+                    <img src="assets/book.png" alt="">
+                    <span>Buku</span>
+                </a>
+
+                <a href="" id="menu-peminjaman">
+                    <img src="assets/bawa buku.png" alt="">
+                    <span>Peminjaman</span>
+                </a>
+
+                <a href="" id="menu-riwayat">
+                    <img src="assets/history.png" alt="">
+                    <span>Riwayat</span>
+                </a>
+
+                <a href="" id="menu-notifikasi">
+                    <img src="assets/notif.png" alt="">
+                    <span>Notifikasi</span>
+                </a>
+
+                <a href="" id="menu-profile">
+                    <img src="assets/pp.png" alt="">
+                    <span>Profile</span>
+                </a>
+
+                <a href="" id="menu-pengaturan">
+                    <img src="assets/seting.png" alt="">
+                    <span>Pengaturan</span>
+                </a>
+
+            </div>
+
+            <a href="" class="logout" id="btn-logout">
+                <span>↪</span>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+        <div class="detail-content" id="detail-content">
+
+            <a href="dashboard.html" class="kembali" id="btn-kembali">
+
+                <img
+                    src="assets/back.png"
+                    alt="Back"
+                >
+
+                <span>Kembali</span>
+
+            </a>
+
+            <div
+                class="detail-utama"
+                id="detail-buku"
+                data-book-id="B009"
+            >
+
+                <div class="cover-buku" id="cover-buku">
+
+                    <img
+                        src="assets/bahasa-indonesia.jpg"
+                        alt="Bahasa Indonesia"
+                        id="book-cover"
+                    >
+
+                </div>
+
+                <div class="info-buku" id="info-buku">
+
+                    <h1 id="book-title">
+                        Bahasa Indonesia
+                    </h1>
+
+                    <p
+                        class="penulis"
+                        id="book-author"
+                    >
+                        Nurul Dwi Lestari
+                    </p>
+
+                    <div class="rating" id="book-rating-container">
+
+                        <span class="bintang">★</span>
+
+                        <span id="book-rating">
+                            4.9
+                        </span>
+
+                        <span class="ulasan" id="book-reviews">
+                            (120 ulasan)
+                        </span>
+
+                    </div>
+
+                    <div class="data-buku" id="data-buku">
+
+                        <div class="data-row">
+
+                            <span class="label">
+                                Kategori
+                            </span>
+
+                            <span id="book-category">
+                                Bahasa Indonesia
+                            </span>
+
+                        </div>
+
+                        <div class="data-row">
+
+                            <span class="label">
+                                Penerbit
+                            </span>
+
+                            <span id="book-publisher">
+                                Tim Penulis
+                            </span>
+
+                        </div>
+
+                        <div class="data-row">
+
+                            <span class="label">
+                                Tahun Terbit
+                            </span>
+
+                            <span id="book-year">
+                                Unknown
+                            </span>
+
+                        </div>
+
+                        <div class="data-row">
+
+                            <span class="label">
+                                ISBN
+                            </span>
+
+                            <span id="book-isbn">
+                                -
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="label-rpl" id="label-rpl">
+                    RPL IV
+                </div>
+
+            </div>
+
+            <div class="deskripsi" id="deskripsi-buku">
+
+                <h3 id="judul-deskripsi">Deskripsi</h3>
+
+                <p id="book-description">
+                    Buku Bahasa Indonesia merupakan buku yang membahas
+                    berbagai materi mengenai bahasa Indonesia, mulai dari
+                    penggunaan bahasa yang baik dan benar, tata bahasa,
+                    hingga kemampuan memahami dan menyusun berbagai jenis
+                    teks.
+                </p>
+
+            </div>
+
+            <div class="tombol-detail" id="tombol-detail">
+
+                <button
+                    class="atur-waktu"
+                    id="btn-atur-waktu"
+                    type="button"
+                >
+                    Atur waktu baca
+                </button>
+
+                <button
+                    class="baca-buku"
+                    id="btn-baca-buku"
+                    type="button"
+                    data-book-id="B009"
+                >
+                    Baca Buku
+                </button>
+
+                <button
+                    class="favorit"
+                    id="btn-favorit"
+                    type="button"
+                    data-book-id="B009"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="detail-buku.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan - Daftar Buku</title>
+    <link rel="stylesheet" href="buku.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <div class="sidebar">
+
+            <div class="logo" id="logo-library">
+                <img src="assets/buku.png" alt="">
+                <span>RPL 4 LIBRARY</span>
+            </div>
+
+            <div class="menu" id="menu-sidebar">
+
+                <a href="dashboard.html" id="menu-beranda">
+                    <img src="assets/home.png" alt="">
+                    <span>Beranda</span>
+                </a>
+
+                <a href="buku.html" class="menu-aktif" id="menu-buku">
+                    <img src="assets/book.png" alt="">
+                    <span>Buku</span>
+                </a>
+
+                <a href="waktu.html" id="menu-peminjaman">
+                    <img src="assets/bawa buku.png" alt="">
+                    <span>Atur Waktu</span>
+                </a>
+
+                <a href="riwayat.html" id="menu-riwayat">
+                    <img src="assets/history.png" alt="">
+                    <span>Riwayat</span>
+                </a>
+
+                <a href="notif.html" id="menu-notifikasi">
+                    <img src="assets/notif.png" alt="">
+                    <span>Notifikasi</span>
+                </a>
+
+                <a href="profile.html" id="menu-profile">
+                    <img src="assets/pp.png" alt="">
+                    <span>Profile</span>
+                </a>
+
+                <a href="setting.html" id="menu-pengaturan">
+                    <img src="assets/seting.png" alt="">
+                    <span>Pengaturan</span>
+                </a>
+
+            </div>
+
+            <a href="" class="logout" id="btn-logout">
+                <span>↪</span>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+        <div class="content" id="content-buku">
+
+            <h1 class="judul" id="judul-daftar-buku">Daftar Buku</h1>
+
+            <div class="filter" id="filter-buku">
+
+                <div class="search" id="search-buku">
+
+                    <span class="search-icon" id="search-icon">
+                        <img src="assets/search.png" alt="">
+                    </span>
+
+                    <input
+                        type="text"
+                        id="input-pencarian-buku"
+                        placeholder="Cari judul buku, penulis atau kategori....."
+                    >
+
+                </div>
+
+                <div class="kategori-select" id="kategori-select">
+
+                    <select id="select-kategori">
+                        <option value="">Semua Kategori</option>
+
+                        <option value="bahasa-indonesia">
+                            Bahasa Indonesia
+                        </option>
+
+                        <option value="bahasa-inggris">
+                            Bahasa Inggris
+                        </option>
+
+                        <option value="matematika">
+                            Matematika
+                        </option>
+
+                        <option value="fisika">
+                            Fisika
+                        </option>
+
+                        <option value="kimia">
+                            Kimia
+                        </option>
+
+                        <option value="ips">
+                            IPS
+                        </option>
+
+                        <option value="sejarah">
+                            Sejarah
+                        </option>
+
+                        <option value="technology">
+                            Technology
+                        </option>
+
+                        <option value="materi">
+                            Materi
+                        </option>
+
+                    </select>
+
+                    <span class="dropdown-icon" id="dropdown-icon">⌄</span>
+
+                </div>
+
+            </div>
+
+            <h2 class="subjudul" id="subjudul-buku">
+                Mau baca apa hari ini?
+            </h2>
+
+            <div class="daftar-buku" id="daftar-buku">
+
+                <a href="detail-buku.html" class="buku-link" id="buku-link-B001">
+
+                    <div class="buku-item" id="buku-B001" data-book-id="B001">
+
+                        <img
+                            src="assets/bahasa-indonesia.jpg"
+                            alt="Bahasa Indonesia"
+                        >
+
+                        <div class="buku-info">
+
+                            <b>Bahasa Indonesia</b>
+
+                            <p>Nurul Dwi Lestari</p>
+
+                            <span class="tersedia">
+                                Tersedia
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <div class="buku-item" id="buku-B002" data-book-id="B002">
+
+                    <img
+                        src="assets/bahasa indonesia untuk perguruan tinggi.jpg"
+                        alt="Bahasa Indonesia"
+                    >
+
+                    <div class="buku-info">
+
+                        <b>BAHASA INDONESIA</b>
+
+                        <p>Drs. I Ketut, S.Pd., M.Pd.</p>
+
+                        <span class="tersedia">
+                            Tersedia
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="buku-item" id="buku-B003" data-book-id="B003">
+
+                    <img
+                        src="assets/easy english.jpg"
+                        alt="Easy English"
+                    >
+
+                    <div class="buku-info">
+
+                        <b>EASY ENGLISH</b>
+
+                        <p>Sri Ratna Dewi, S.Pd</p>
+
+                        <span class="tersedia">
+                            Tersedia
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="buku-item" id="buku-B004" data-book-id="B004">
+
+                    <img
+                        src="assets/sejarah indonesia.jpg"
+                        alt="Library XI RPL 4"
+                    >
+
+                    <div class="buku-info">
+
+                        <b>Sejarah Indonesia</b>
+
+                        <p>RPL 4 Library</p>
+
+                        <span class="tersedia">
+                            Tersedia
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="buku-item" id="buku-B005" data-book-id="B005">
+
+                    <img
+                        src="assets/matematika sma.jpg"
+                        alt="Matematika SMA"
+                    >
+
+                    <div class="buku-info">
+
+                        <b>MATEMATIKA SMA</b>
+
+                        <p>Tim Penulis</p>
+
+                        <span class="tersedia">
+                            Tersedia
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="buku-item" id="buku-B006" data-book-id="B006">
+
+                    <img
+                        src="assets/aritmetika.jpg"
+                        alt="Aritmetika"
+                    >
+
+                    <div class="buku-info">
+
+                        <b>Aritmetika</b>
+
+                        <p>Tim Penulis</p>
+
+                        <span class="tersedia">
+                            Tersedia
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="detail" id="detail-buku-samping">
+
+            <h2 id="detail-buku-title">Detail Buku</h2>
+
+            <div class="detail-gambar" id="detail-buku-gambar">
+
+                <img
+                    src="assets/gambar-detail-buku.jpg"
+                    alt="Gambar Detail Buku"
+                >
+
+            </div>
+
+            <div class="detail-kosong" id="detail-buku-kosong">
+
+                <img src="assets/turu.jpg" alt="">
+
+                <p>
+                    Pilih buku untuk melihat
+                    <br>
+                    detail buku.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

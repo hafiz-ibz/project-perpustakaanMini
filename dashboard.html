@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard" id="dashboard">
+
+        <div class="sidebar" id="sidebar">
+
+            <div class="logo" id="logo-library">
+                <img src="assets/buku.png" alt="">
+                <span>RPL 4 LIBRARY</span>
+            </div>
+
+            <div class="menu" id="menu-sidebar">
+
+                <a href="dashboard.html" class="menu-aktif" id="menu-beranda">
+                    <img src="assets/home.png" alt="">
+                    <span>Beranda</span>
+                </a>
+
+                <a href="buku.html" id="menu-buku">
+                    <img src="assets/book.png" alt="">
+                    <span>Buku</span>
+                </a>
+
+                <a href="waktu.html" id="menu-peminjaman">
+                    <img src="assets/bawa buku.png" alt="">
+                    <span>Atur Waktu</span>
+                </a>
+
+                <a href="riwayat.html" id="menu-riwayat">
+                    <img src="assets/history.png" alt="">
+                    <span>Riwayat</span>
+                </a>
+
+                <a href="notif.html" id="menu-notifikasi">
+                    <img src="assets/notif.png" alt="">
+                    <span>Notifikasi</span>
+                </a>
+
+                <a href="profile.html" id="menu-profile">
+                    <img src="assets/pp.png" alt="">
+                    <span>Profile</span>
+                </a>
+
+                <a href="setting.html" id="menu-pengaturan">
+                    <img src="assets/seting.png" alt="">
+                    <span>Pengaturan</span>
+                </a>
+
+            </div>
+
+            <a href="login.html" class="logout" id="btn-logout">
+                <span>↪</span>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+        <div class="content" id="content-dashboard">
+
+            <div class="navbar" id="navbar-dashboard">
+
+                <div class="search" id="search-buku">
+
+                    <span id="search-icon">
+                        <img src="assets/search.png" alt="">
+                    </span>
+
+                    <input
+                        type="text"
+                        id="input-pencarian"
+                        placeholder="Cari judul buku, penulis atau kategori....."
+                    >
+
+                </div>
+
+                <div class="profil" id="profil-navbar">
+
+                    <span class="notifikasi" id="btn-notifikasi">
+                        <img src="assets/notif.png" alt="">
+                    </span>
+
+                    <img src="assets/profil.png" alt="Foto Profil" id="foto-profil-navbar">
+
+                    <b id="nama-pengguna">M.Rafli</b>
+
+                </div>
+
+            </div>
+
+            <div class="welcome" id="welcome">
+
+                <div class="welcome-text" id="welcome-text">
+
+                    <h1 id="sapaan-pengguna">Halo, M.Rafli</h1>
+
+                    <p id="welcome-subtitle">Mau baca apa hari ini?</p>
+
+                    <img
+                        class="welcome-book"
+                        id="welcome-book"
+                        src="assets/bukubukabawah.png"
+                        alt=""
+                    >
+
+                </div>
+
+                <img
+                    class="welcome-image"
+                    id="welcome-image"
+                    src="assets/dashboard.png"
+                    alt=""
+                >
+
+            </div>
+
+            <h2 class="judul-section" id="judul-kategori">Kategori</h2>
+
+            <div class="kategori" id="kategori">
+
+                <div class="kategori-box" id="kategori-fisika" data-category-id="K001">
+                    <img src="assets/fisika.png" alt="">
+                    <b>Fisika</b>
+                </div>
+
+                <div class="kategori-box" id="kategori-technology" data-category-id="K002">
+                    <img src="assets/technology.png" alt="">
+                    <b>Technology</b>
+                </div>
+
+                <div class="kategori-box" id="kategori-sejarah" data-category-id="K003">
+                    <img src="assets/sejarah.png" alt="">
+                    <b>Sejarah</b>
+                </div>
+
+                <div class="kategori-box" id="kategori-materi" data-category-id="K004">
+                    <img src="assets/materi.png" alt="">
+                    <b>Materi</b>
+                </div>
+
+            </div>
+
+            <h2 class="judul-section" id="judul-buku-populer">Buku Populer</h2>
+
+            <div class="buku" id="buku-populer">
+
+                <div
+                    class="buku-item"
+                    id="book-card-B001"
+                    data-book-id="B001"
+                >
+
+                    <img
+                        src="assets/matematika-kejuruan.jpg"
+                        alt="Matematika Kejuruan"
+                    >
+
+                    <b>Matematika kejuruan</b>
+
+                    <p>Ai Tusi Fatimah</p>
+
+                    <span>★ 4.8</span>
+
+                </div>
+
+                <div
+                    class="buku-item"
+                    id="book-card-B002"
+                    data-book-id="B002"
+                >
+
+                    <img
+                        src="assets/buku ajar fisika dasar 1.jpg"
+                        alt="Fisika Dasar 1"
+                    >
+
+                    <b>Fisika dasar 1</b>
+
+                    <p>Dr. Martha Rianna, S.Si</p>
+
+                    <span>★ 5.0</span>
+
+                </div>
+
+                <div
+                    class="buku-item"
+                    id="book-card-B003"
+                    data-book-id="B003"
+                >
+
+                    <img
+                        src="assets/ensiklopedia sains.jpg"
+                        alt="Ensiklopedia Sains"
+                    >
+
+                    <b>ENSIKLOPEDIA SAINS</b>
+
+                    <p>BIP</p>
+
+                    <span>★ 4.7</span>
+
+                </div>
+
+                <div
+                    class="buku-item"
+                    id="book-card-B004"
+                    data-book-id="B004"
+                >
+
+                    <img
+                        src="assets/pengantar fisika modern.jpg"
+                        alt="Fisika Modern"
+                    >
+
+                    <b>Fisika Modern</b>
+
+                    <p>Prof Dr. Tono Djudin</p>
+
+                    <span>★ 4.9</span>
+
+                </div>
+
+                <div
+                    class="buku-item"
+                    id="book-card-B005"
+                    data-book-id="B005"
+                >
+
+                    <img
+                        src="assets/desain-pembelajaran-ipa.jpg"
+                        alt="Desain Pembelajaran IPA"
+                    >
+
+                    <b>Desain/Pembelajaran IPA</b>
+
+                    <p>Sri Faizah Linsari Jainab</p>
+
+                    <span>★ 4.8</span>
+
+                </div>
+
+                <div
+                    class="buku-item"
+                    id="book-card-B006"
+                    data-book-id="B006"
+                >
+
+                    <img
+                        src="assets/ips.jpg"
+                        alt="IPS"
+                    >
+
+                    <b>IPS</b>
+
+                    <p>M. Iqbal Birsyada</p>
+
+                    <span>★ 4.7</span>
+
+                </div>
+
+                <div
+                    class="buku-item"
+                    id="book-card-B007"
+                    data-book-id="B007"
+                >
+
+                    <img
+                        src="assets/kimia dasar.jpg"
+                        alt="Kimia Dasar"
+                    >
+
+                    <b>KIMIA DASAR</b>
+
+                    <p>Hardjono Sastrohamidjojo</p>
+
+                    <span>★ 4.8</span>
+
+                </div>
+
+                <div
+                    class="buku-item"
+                    id="book-card-B008"
+                    data-book-id="B008"
+                >
+
+                    <img
+                        src="assets/sejarah indonesia.jpg"
+                        alt="Sejarah Indonesia II"
+                    >
+
+                    <b>SEJARAH INDONESIA II</b>
+
+                    <p>Ai Tusi Fatimah</p>
+
+                    <span>★ 4.9</span>
+
+                </div>
+
+                <a
+                    href="detail-buku.html?book_id=B009"
+                    class="buku-item"
+                    id="book-card-B009"
+                    data-book-id="B009"
+                    data-has-detail="true"
+                    style="text-decoration: none; color: inherit;"
+                >
+
+                    <img
+                        src="assets/bahasa-indonesia.jpg"
+                        alt="Bahasa Indonesia"
+                    >
+
+                    <b>Bahasa Indonesia</b>
+
+                    <p>Nurul Dwi Lestari</p>
+
+                    <span>★ 4.9</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

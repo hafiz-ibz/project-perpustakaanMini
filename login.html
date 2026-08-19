@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Perpustakaan-login</title>
+</head>
+
+<body>
+    <div class="gmbr1" id="gambar-atas"><img src="assets/buku.png" alt=""></div>
+    <div class="gmbr2" id="gambar-bawah"><img src="assets/buku bulu.png" alt=""></div>
+    <h1 id="judul-halaman">Wujudkan mimpi anak RPL hebat</h1>
+
+    <div class="kotak" id="form-login">
+        <h1 id="judul-login">Selamat Datang Kembali !</h1>
+
+        <p class="judul" id="subjudul-login">Masuk untuk melanjutkan ke akun anda</p>
+
+        <h2>Email atau Username</h2>
+
+        <input type="text" id="username-email" placeholder="Masukkan username atau email">
+
+        <h2>Password</h2>
+
+        <input type="password" id="password" placeholder="Masukkan password">
+
+        <div class="opsi" id="opsi-login">
+            <div>
+                <input type="checkbox" id="ingat">
+                <label for="ingat">Ingatkan Saya</label>
+            </div>
+
+            <a href="" id="lupa-password">Lupa Password?</a>
+        </div>
+
+        <button
+            type="button"
+            class="btn-masuk"
+            id="btn-masuk"
+            onclick="window.location.href='dashboard.html'"
+        >
+            Masuk
+        </button>
+
+        <div class="daftar" id="link-daftar">
+            <p>Belum Punya Akun?</p>
+            <a href="daftar.html" id="btn-buat-akun">Buat Akun</a>
+        </div>
+    </div>
+</body>
+
+</html>
