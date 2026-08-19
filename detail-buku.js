@@ -13,3 +13,5 @@ if (bookId) {
 
     tombolFavorit.setAttribute("data-book-id", bookId);
 }
+
+//17
