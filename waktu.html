@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan - Atur Waktu Baca</title>
+    <link rel="stylesheet" href="waktu.css">
+</head>
+
+<body>
+
+    <div class="dashboard" id="dashboard">
+
+        <div class="sidebar" id="sidebar">
+
+            <div class="logo" id="logo-library">
+                <img src="assets/buku.png" alt="">
+                <span>RPL 4 LIBRARY</span>
+            </div>
+
+            <div class="menu" id="menu-sidebar">
+
+                <a href="dashboard.html" id="menu-beranda">
+                    <img src="assets/home.png" alt="">
+                    <span>Beranda</span>
+                </a>
+
+                <a href="buku.html" id="menu-buku">
+                    <img src="assets/book.png" alt="">
+                    <span>Buku</span>
+                </a>
+
+                <a href="waktu.html" class="menu-aktif" id="menu-peminjaman">
+                    <img src="assets/bawa buku.png" alt="">
+                    <span>Atur Waktu</span>
+                </a>
+
+                <a href="riwayat.html" id="menu-riwayat">
+                    <img src="assets/history.png" alt="">
+                    <span>Riwayat</span>
+                </a>
+
+                <a href="notif.html" id="menu-notifikasi">
+                    <img src="assets/notif.png" alt="">
+                    <span>Notifikasi</span>
+                </a>
+
+                <a href="profile.html" id="menu-profile">
+                    <img src="assets/pp.png" alt="">
+                    <span>Profile</span>
+                </a>
+
+                <a href="setting.html" id="menu-pengaturan">
+                    <img src="assets/seting.png" alt="">
+                    <span>Pengaturan</span>
+                </a>
+
+            </div>
+
+            <a href="" class="logout" id="btn-logout">
+                <span>↪</span>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+        <div class="content" id="content-waktu">
+
+            <div class="tab-menu" id="tab-menu">
+
+                <a href="" class="tab-aktif" id="tab-atur-waktu">
+                    Atur Waktu Baca
+                </a>
+
+                <a href="" id="tab-selesai-baca">
+                    Selesai Baca
+                </a>
+
+            </div>
+
+            <div class="waktu-container" id="waktu-container">
+
+                <div class="waktu-item" id="waktu-B001">
+
+                    <div class="buku" id="buku-waktu-B001">
+
+                        <img
+                            src="assets/dongeng anak nusantara.jpg"
+                            alt="Dongeng Anak Nusantara"
+                        >
+
+                        <div class="buku-info">
+
+                            <h2>Dongeng Anak Nusantara</h2>
+
+                            <p class="penulis">
+                                Iyas Andinita
+                            </p>
+
+                            <p class="jam">
+                                Mulai 12:30
+                                <br>
+                                Selesai 13:00
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="waktu-aksi" id="aksi-waktu-B001">
+
+                        <span class="status-mulai">
+                            Mulai : 12:30
+                        </span>
+
+                        <button class="btn-selesai" id="btn-selesai-B001">
+                            Selesai 13:00
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="waktu-item" id="waktu-B002">
+
+                    <div class="buku" id="buku-waktu-B002">
+
+                        <img
+                            src="assets/bahasa jepang.jpg"
+                            alt="Bahasa Jepang"
+                        >
+
+                        <div class="buku-info">
+
+                            <h2>Bahasa Jepang</h2>
+
+                            <p class="penulis">
+                                Kang sam
+                            </p>
+
+                            <p class="jam">
+                                Mulai :
+                                <br>
+                                Selesai :
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="waktu-aksi" id="aksi-waktu-B002">
+
+                        <span class="status-mulai">
+                            Mulai Baca
+                        </span>
+
+                        <button class="btn-selesai" id="btn-selesai-B002">
+                            Sampai
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="waktu-item" id="waktu-B003">
+
+                    <div class="buku" id="buku-waktu-B003">
+
+                        <img
+                            src="assets/timun mas.jpg"
+                            alt="Timun Mas"
+                        >
+
+                        <div class="buku-info">
+
+                            <h2>Timun Mas</h2>
+
+                            <p class="penulis">
+                                HHK LEGENDA
+                            </p>
+
+                            <p class="jam">
+                                Mulai :
+                                <br>
+                                Sampai :
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="waktu-aksi" id="aksi-waktu-B003">
+
+                        <span class="status-mulai">
+                            Mulai Baca
+                        </span>
+
+                        <button class="btn-selesai" id="btn-selesai-B003">
+                            Sampai
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

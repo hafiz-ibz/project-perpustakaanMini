@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan - Notifikasi</title>
+    <link rel="stylesheet" href="notif.css">
+</head>
+
+<body>
+
+    <div class="dashboard" id="dashboard">
+
+        <div class="sidebar" id="sidebar">
+
+            <div class="logo" id="logo-library">
+                <img src="assets/buku.png" alt="">
+                <span>RPL 4 LIBRARY</span>
+            </div>
+
+            <div class="menu" id="menu-sidebar">
+
+                <a href="dashboard.html" id="menu-beranda">
+                    <img src="assets/home.png" alt="">
+                    <span>Beranda</span>
+                </a>
+
+                <a href="buku.html" id="menu-buku">
+                    <img src="assets/book.png" alt="">
+                    <span>Buku</span>
+                </a>
+
+                <a href="waktu.html" id="menu-peminjaman">
+                    <img src="assets/bawa buku.png" alt="">
+                    <span>Atur Waktu</span>
+                </a>
+
+                <a href="riwayat.html" id="menu-riwayat">
+                    <img src="assets/history.png" alt="">
+                    <span>Riwayat</span>
+                </a>
+
+                <a href="notif.html" class="menu-aktif" id="menu-notifikasi">
+                    <img src="assets/notif.png" alt="">
+                    <span>Notifikasi</span>
+                </a>
+
+                <a href="profile.html" id="menu-profile">
+                    <img src="assets/pp.png" alt="">
+                    <span>Profile</span>
+                </a>
+
+                <a href="setting.html" id="menu-pengaturan">
+                    <img src="assets/seting.png" alt="">
+                    <span>Pengaturan</span>
+                </a>
+
+            </div>
+
+            <a href="" class="logout" id="btn-logout">
+                <span>↪</span>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+        <div class="content" id="content-notifikasi">
+
+            <div class="navbar" id="navbar-notifikasi">
+
+                <div class="navbar-title" id="navbar-title">
+                    <h1>Notifikasi</h1>
+                    <p>Informasi terbaru mengenai aktivitas perpustakaan kamu.</p>
+                </div>
+
+                <div class="profil" id="profil-navbar">
+
+                    <span class="notifikasi" id="btn-notifikasi">
+                        <img src="assets/notif.png" alt="">
+                    </span>
+
+                    <img src="assets/profil.png" alt="Foto Profil" id="foto-profil">
+
+                    <b id="nama-pengguna">M.Rafli</b>
+
+                </div>
+
+            </div>
+
+            <div class="notification-header" id="notification-header">
+
+                <div>
+                    <h2>Notifikasi</h2>
+                    <p id="jumlah-notifikasi">4 notifikasi terbaru</p>
+                </div>
+
+                <button class="read-all" id="btn-read-all">
+                    Tandai semua dibaca
+                </button>
+
+            </div>
+
+            <h3 class="notification-day" id="notifikasi-hari-ini">Hari ini</h3>
+
+            <div class="notification-list" id="notification-list-hari-ini">
+
+                <div class="notification-card unread blue-card" id="notification-1">
+
+                    <div class="notification-icon blue" id="notification-icon-1">
+                        <img src="assets/book.png" alt="">
+                    </div>
+
+                    <div class="notification-content" id="notification-content-1">
+
+                        <div class="notification-title">
+                            <b>Buku berhasil dipinjam</b>
+                            <span class="dot"></span>
+                        </div>
+
+                        <p>
+                            Buku <strong>Talaga Warna</strong> berhasil kamu pinjam.
+                        </p>
+
+                        <span class="time">
+                            10 menit yang lalu
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="notification-card unread orange-card" id="notification-2">
+
+                    <div class="notification-icon orange" id="notification-icon-2">
+                        <img src="assets/history.png" alt="">
+                    </div>
+
+                    <div class="notification-content" id="notification-content-2">
+
+                        <div class="notification-title">
+                            <b>Pengingat pengembalian</b>
+                            <span class="dot"></span>
+                        </div>
+
+                        <p>
+                            Jangan lupa mengembalikan buku yang kamu pinjam.
+                        </p>
+
+                        <span class="time">
+                            1 jam yang lalu
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h3 class="notification-day kemarin" id="notifikasi-kemarin">
+                Kemarin
+            </h3>
+
+            <div class="notification-list" id="notification-list-kemarin">
+
+                <div class="notification-card green-card" id="notification-3">
+
+                    <div class="notification-icon green" id="notification-icon-3">
+                        <span>✓</span>
+                    </div>
+
+                    <div class="notification-content" id="notification-content-3">
+
+                        <div class="notification-title">
+                            <b>Buku berhasil dikembalikan</b>
+                        </div>
+
+                        <p>
+                            Buku <strong>Fisika Dasar</strong> telah berhasil dikembalikan.
+                        </p>
+
+                        <span class="time">
+                            Kemarin, 15:30
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="notification-card purple-card" id="notification-4">
+
+                    <div class="notification-icon purple" id="notification-icon-4">
+                        <span>▤</span>
+                    </div>
+
+                    <div class="notification-content" id="notification-content-4">
+
+                        <div class="notification-title">
+                            <b>Buku baru tersedia</b>
+                        </div>
+
+                        <p>
+                            Ada beberapa buku baru yang bisa kamu baca di perpustakaan.
+                        </p>
+
+                        <span class="time">
+                            Kemarin, 09:15
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perpustakaan - Riwayat Baca</title>
+
+    <link rel="stylesheet" href="riwayat.css">
+</head>
+
+<body>
+
+    <div class="dashboard" id="dashboard">
+
+        <div class="sidebar" id="sidebar">
+
+            <div class="logo" id="logo-library">
+
+                <img src="assets/buku.png" alt="">
+
+                <span>RPL 4 LIBRARY</span>
+
+            </div>
+
+            <div class="menu" id="menu-sidebar">
+
+                <a href="dashboard.html" id="menu-beranda">
+                    <img src="assets/home.png" alt="">
+                    <span>Beranda</span>
+                </a>
+
+                <a href="buku.html" id="menu-buku">
+                    <img src="assets/book.png" alt="">
+                    <span>Buku</span>
+                </a>
+
+                <a href="waktu.html" id="menu-peminjaman">
+                    <img src="assets/bawa buku.png" alt="">
+                    <span>Atur Waktu</span>
+                </a>
+
+                <a href="riwayat.html" class="menu-aktif" id="menu-riwayat">
+                    <img src="assets/history.png" alt="">
+                    <span>Riwayat</span>
+                </a>
+
+                <a href="notif.html" id="menu-notifikasi">
+                    <img src="assets/notif.png" alt="">
+                    <span>Notifikasi</span>
+                </a>
+
+                <a href="profile.html" id="menu-profile">
+                    <img src="assets/pp.png" alt="">
+                    <span>Profile</span>
+                </a>
+
+                <a href="setting.html" id="menu-pengaturan">
+                    <img src="assets/seting.png" alt="">
+                    <span>Pengaturan</span>
+                </a>
+
+            </div>
+
+            <a href="" class="logout" id="btn-logout">
+
+                <span>↪</span>
+
+                <span>Logout</span>
+
+            </a>
+
+        </div>
+
+        <div class="content" id="content-riwayat">
+
+            <div class="judul-area" id="judul-area-riwayat">
+
+                <h1 id="judul-riwayat">Riwayat Baca</h1>
+
+                <div class="garis" id="garis-riwayat">
+
+                    <span class="aktif" id="tab-selesai">
+                        Selesai
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="riwayat-container" id="riwayat-container">
+
+                <div class="riwayat-item" id="riwayat-B001">
+
+                    <div class="buku-gambar" id="gambar-riwayat-B001">
+
+                        <img
+                            src="assets/dongeng anak nusantara.jpg"
+                            alt="Dongeng Anak Nusantara"
+                        >
+
+                    </div>
+
+                    <div class="buku-info" id="info-riwayat-B001">
+
+                        <h2>
+                            Dongeng Anak Nusantara
+                        </h2>
+
+                        <p class="penulis">
+                            Iyas Anindita
+                        </p>
+
+                        <div class="waktu" id="waktu-riwayat-B001">
+
+                            <p>
+                                Mulai 12:30
+                            </p>
+
+                            <p>
+                                Selesai 13:00
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="status" id="status-riwayat-B001">
+
+                        <button id="btn-status-B001">
+                            Selesai 13:00
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="riwayat-item" id="riwayat-B002">
+
+                    <div class="buku-gambar" id="gambar-riwayat-B002">
+
+                        <img
+                            src="assets/fisika.jpg"
+                            alt="Fisika"
+                        >
+
+                    </div>
+
+                    <div class="buku-info" id="info-riwayat-B002">
+
+                        <h2>
+                            FISIKA
+                        </h2>
+
+                        <p class="penulis">
+                            KP. K. R. DT
+                        </p>
+
+                        <div class="waktu" id="waktu-riwayat-B002">
+
+                            <p>
+                                Mulai 13:00
+                            </p>
+
+                            <p>
+                                Selesai 14:00
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="status" id="status-riwayat-B002">
+
+                        <button id="btn-status-B002">
+                            Selesai 14:00
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="riwayat-item" id="riwayat-B003">
+
+                    <div class="buku-gambar" id="gambar-riwayat-B003">
+
+                        <img
+                            src="assets/matematika.jpg"
+                            alt="Matematika"
+                        >
+
+                    </div>
+
+                    <div class="buku-info" id="info-riwayat-B003">
+
+                        <h2>
+                            Matematika
+                        </h2>
+
+                        <p class="penulis">
+                            Iman Santoso I B.K. Noormandiri
+                        </p>
+
+                        <div class="waktu" id="waktu-riwayat-B003">
+
+                            <p>
+                                Mulai 11:00
+                            </p>
+
+                            <p>
+                                Selesai 12:00
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="status" id="status-riwayat-B003">
+
+                        <button id="btn-status-B003">
+                            Selesai 12:00
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
