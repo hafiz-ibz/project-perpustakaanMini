@@ -9,9 +9,7 @@ body {
 }
 
 
-/* =====================
-   DASHBOARD
-===================== */
+
 
 .dashboard {
     display: flex;
@@ -19,9 +17,6 @@ body {
 }
 
 
-/* =====================
-   SIDEBAR
-===================== */
 
 .sidebar {
     width: 205px;
@@ -37,7 +32,6 @@ body {
 }
 
 
-/* LOGO */
 
 .logo {
     display: flex;
