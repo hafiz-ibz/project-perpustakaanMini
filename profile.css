@@ -1,0 +1,451 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+
+/* =====================
+   DASHBOARD
+===================== */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/* =====================
+   SIDEBAR
+===================== */
+
+.sidebar {
+    width: 205px;
+    min-height: 100vh;
+
+    border-right: 1px solid #999;
+
+    padding: 35px 15px;
+
+    position: relative;
+
+    flex-shrink: 0;
+}
+
+
+/* =====================
+   LOGO
+===================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 35px;
+}
+
+.logo img {
+    width: 45px;
+    height: 35px;
+
+    object-fit: contain;
+}
+
+.logo span {
+    color: #168CF5;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =====================
+   MENU
+===================== */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    height: 42px;
+
+    padding: 0 12px;
+
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    font-size: 16px;
+}
+
+.menu a img {
+    width: 24px;
+    height: 24px;
+
+    object-fit: contain;
+}
+
+
+/* =====================
+   MENU AKTIF
+===================== */
+
+.menu .menu-aktif {
+    background-color: #E1F1FF;
+
+    border: 1px solid #168CF5;
+}
+
+
+/* =====================
+   LOGOUT
+===================== */
+
+.logout {
+    position: absolute;
+
+    bottom: 60px;
+    left: 27px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    color: black;
+
+    text-decoration: none;
+}
+
+
+/* =====================
+   CONTENT
+===================== */
+
+.content {
+    flex: 1;
+
+    width: calc(100% - 205px);
+
+    padding: 50px 45px;
+
+    min-width: 0;
+}
+
+
+/* =====================
+   PROFILE CARD
+===================== */
+
+.profile-card {
+    width: 100%;
+
+    min-height: 210px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 35px;
+
+    position: relative;
+}
+
+
+/* =====================
+   PROFILE IMAGE
+===================== */
+
+.profile-image {
+    width: 125px;
+    height: 125px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    border: 1px solid #555;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #eee;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =====================
+   PROFILE DATA
+===================== */
+
+.profile-data {
+    margin-left: 25px;
+}
+
+.profile-data h1 {
+    font-family: "Times New Roman", Times, serif;
+
+    font-size: 23px;
+
+    margin: 0 0 15px 0;
+}
+
+.profile-data p {
+    font-size: 13px;
+
+    margin: 0 0 15px 0;
+}
+
+.profile-data strong {
+    font-weight: bold;
+}
+
+
+/* =====================
+   EDIT PROFILE
+===================== */
+
+.edit-profile {
+    position: absolute;
+
+    right: 30px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 140px;
+    height: 40px;
+
+    background-color: white;
+
+    border: 1px solid #777;
+
+    border-radius: 5px;
+
+    color: #0089ff;
+
+    font-family: "Times New Roman", Times, serif;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.edit-profile:hover {
+    background-color: #E1F1FF;
+}
+
+
+/* =====================
+   STATISTIK
+===================== */
+
+.statistik {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 45px;
+
+    margin: 22px 20px;
+}
+
+
+/* =====================
+   STAT CARD
+===================== */
+
+.stat-card {
+    height: 120px;
+
+    border: 1px solid #777;
+
+    border-radius: 5px;
+
+    background-color: #E1F1FF;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.stat-card h2 {
+    font-size: 25px;
+
+    margin: 0 0 8px 0;
+}
+
+.stat-card p {
+    font-size: 14px;
+
+    margin: 0;
+
+    text-align: center;
+}
+
+
+/* =====================
+   INFORMASI PRIBADI
+===================== */
+
+.informasi {
+    margin: 20px 20px 0 20px;
+
+    border-top: 1px solid #aaa;
+
+    padding-top: 15px;
+}
+
+
+/* =====================
+   JUDUL INFORMASI
+===================== */
+
+.informasi h2 {
+    font-size: 16px;
+
+    margin: 0 0 10px 0;
+}
+
+
+/* =====================
+   LIST INFORMASI
+===================== */
+
+.informasi-list {
+    width: 100%;
+}
+
+
+/* =====================
+   ROW INFORMASI
+===================== */
+
+.informasi-row {
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+.informasi-row span:first-child {
+    font-weight: normal;
+}
+
+.informasi-row span:last-child {
+    font-weight: normal;
+}
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 180px;
+    }
+
+    .content {
+        width: calc(100% - 180px);
+
+        padding: 30px;
+    }
+
+    .profile-card {
+        padding: 25px;
+    }
+
+    .statistik {
+        gap: 15px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        width: 170px;
+    }
+
+    .content {
+        width: calc(100% - 170px);
+    }
+
+    .profile-card {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 15px;
+    }
+
+    .profile-data {
+        margin-left: 0;
+    }
+
+    .edit-profile {
+        position: static;
+
+        transform: none;
+
+        margin-top: 5px;
+    }
+
+    .statistik {
+        grid-template-columns: 1fr;
+    }
+
+    .informasi-row {
+        grid-template-columns: 1fr;
+
+        gap: 5px;
+    }
+
+}
