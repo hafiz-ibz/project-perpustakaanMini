@@ -123,9 +123,7 @@ body {
 }
 
 
-/* =====================
-   CONTENT
-===================== */
+
 
 .content {
     flex: 1;
@@ -136,9 +134,7 @@ body {
 }
 
 
-/* =====================
-   JUDUL
-===================== */
+
 
 .judul {
     font-family: 'Times New Roman', Times, serif;
@@ -149,9 +145,7 @@ body {
 }
 
 
-/* =====================
-   FILTER
-===================== */
+
 
 .filter {
     display: flex;
@@ -164,9 +158,7 @@ body {
 }
 
 
-/* =====================
-   SEARCH
-===================== */
+
 
 .search {
     width: 475px;
@@ -195,8 +187,8 @@ body {
 }
 
 .search-icon img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 
     object-fit: contain;
 }
@@ -212,9 +204,7 @@ body {
 }
 
 
-/* =====================
-   KATEGORI
-===================== */
+
 
 .kategori-select {
     width: 200px;
@@ -253,7 +243,7 @@ body {
 }
 
 
-/* ICON V */
+
 
 .dropdown-icon {
     position: absolute;
@@ -274,9 +264,7 @@ body {
 }
 
 
-/* =====================
-   SUBJUDUL
-===================== */
+
 
 .subjudul {
     font-family: 'Times New Roman', Times, serif;
@@ -287,9 +275,7 @@ body {
 }
 
 
-/* =====================
-   DAFTAR BUKU
-===================== */
+
 
 .daftar-buku {
     display: grid;
@@ -428,11 +414,6 @@ body {
     display: block;
 }
 
-
-/* =====================
-   DETAIL KOSONG
-   GAMBAR BAWAH = BESAR
-===================== */
 
 .detail-kosong {
     display: flex;
