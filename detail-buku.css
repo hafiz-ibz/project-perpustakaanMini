@@ -17,9 +17,7 @@ body {
 }
 
 
-/* =====================
-   SIDEBAR
-===================== */
+
 
 .sidebar {
     width: 205px;
@@ -34,8 +32,6 @@ body {
     flex-shrink: 0;
 }
 
-
-/* LOGO */
 
 .logo {
     display: flex;
@@ -129,11 +125,6 @@ body {
 
     min-width: 0;
 }
-
-
-/* =====================
-   KEMBALI
-===================== */
 
 .kembali {
     display: flex;
